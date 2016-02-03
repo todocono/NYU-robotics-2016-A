@@ -14,13 +14,14 @@ void loop() {
   digitalWrite (speedPin_M1, HIGH);
   digitalWrite(directionPin_M2, HIGH);
 
-  delay(1000);
+  delay(1000); //WAITS FOR 1 SECOND
+
   digitalWrite (speedPin_M2, LOW);             //PWM Speed Control
   digitalWrite(directionPin_M1, HIGH);
   digitalWrite (speedPin_M1, LOW);
   digitalWrite(directionPin_M2, HIGH);
 
-  while (1);
+  delay(1000);
 
 }
 
