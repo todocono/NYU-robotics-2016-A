@@ -17,7 +17,7 @@ void loop() {
   Serial.println("carAdvance");
   delay(100);
   carTurnRight(70, 70);
-  /                 Serial.println("carTurnRight");
+  //                 Serial.println("carTurnRight");
   delay(100);
   carTurnLeft(70, 70);
   //                   Serial.println("carTurnLeft");
