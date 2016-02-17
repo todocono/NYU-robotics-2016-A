@@ -1,3 +1,5 @@
+#include <Servo.h>
+
 /*
   Example 5
    Introduction to Robotics
@@ -8,8 +10,11 @@
    Some code and wiring inspired by http://en.wikiversity.org/wiki/User:Dstaub/robotcar
 */
 
-#define trigPin 13
-#define echoPin 12
+Servo myservo1;
+Servo myservo2;
+
+#define trigPin 5
+#define echoPin 6
 
 void setup() {
   Serial.begin (9600);
@@ -23,7 +28,7 @@ void loop() {
   int distance = ultraSound();
   if (distance < 4) {  // This is where the LED On/Off happens
     Serial.print("really close!");
-    //sweepServo();
+    sweepServo();
   }
   else {
     Serial.print("measured: ");
